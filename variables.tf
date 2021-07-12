@@ -39,7 +39,7 @@ variable "ami_id" {
 variable "ssh_key_name" {
   description = "The name of an EC2 Key Pair that can be used to SSH to the EC2 Instances in this cluster. Set to an empty string to not associate a Key Pair."
   type        = string
-  default     = null
+  default     = "vault-consul"
 }
 
 variable "subnet_tags" {
@@ -63,13 +63,13 @@ variable "use_default_vpc" {
 variable "vault_cluster_name" {
   description = "What to name the Vault server cluster and all of its associated resources"
   type        = string
-  default     = "vault-example"
+  default     = "vault-demo"
 }
 
 variable "consul_cluster_name" {
   description = "What to name the Consul server cluster and all of its associated resources"
   type        = string
-  default     = "consul-example"
+  default     = "consul-demo"
 }
 
 variable "vault_cluster_size" {
