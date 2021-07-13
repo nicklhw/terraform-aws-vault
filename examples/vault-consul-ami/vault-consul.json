@@ -8,9 +8,9 @@
     "consul_download_url": "{{env `CONSUL_DOWNLOAD_URL`}}",
     "vault_download_url": "{{env `VAULT_DOWNLOAD_URL`}}",
     "install_auth_signing_script": "true",
-    "ca_public_key_path": null,
-    "tls_public_key_path": null,
-    "tls_private_key_path": null
+    "ca_public_key_path": "/Users/NWNG/Downloads/tls/ca.crt.pem",
+    "tls_public_key_path": "/Users/NWNG/Downloads/tls/vault.crt.pem",
+    "tls_private_key_path": "/Users/NWNG/Downloads/tls/vault.key.pem"
   },
   "builders": [{
     "ami_name": "vault-consul-ubuntu18-{{isotime | clean_resource_name}}-{{uuid}}",
